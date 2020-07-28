@@ -1,11 +1,19 @@
 import React from 'react';
 import Logo from '../../assets/img/Logo.png';
 import './Menu.css';
+import Button from '../Button/index.js';
+// import ButtonLink from './components/ButtonLink/index.js'
 
 function Menu() {
     return (
-        <nav>
-            <img class="Logo" src={Logo} alt="SamFlix logo"/>
+        <nav className="Menu">
+            <a href="/">
+                <img className="Logo" src={Logo} alt="SamFlix logo"/>
+            </a>
+
+            <Button as="a" href="/" className="ButtonLink">
+                Novo vídeo
+            </Button>
         </nav>
     );
 }
