@@ -2,11 +2,13 @@ import React from 'react';
 import Carousel from '../../components/Carousel/index.js';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain/index.js';
+import Menu from '../../components/Menu/index.js';
 import Footer from '../../components/Footer/index.js';
 
 function Home() {
   return (
     <div style={{ background: "#141414" }}>
+      <Menu />
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
@@ -37,7 +39,6 @@ function Home() {
       <Carousel
         category={dadosIniciais.categorias[5]}
       />      
-
       <Footer />
     </div>
   );
